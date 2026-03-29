@@ -46,3 +46,5 @@ git push origin feature-[nome-da-sua-tarefa]
 3. Descreva o que foi feito e clique em "Create pull request".
 
 4. O líder do projeto (Marcelo) fará a revisão e o Merge para a branch principal.
+
+---
