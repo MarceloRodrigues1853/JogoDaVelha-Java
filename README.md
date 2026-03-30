@@ -20,6 +20,8 @@ Este projeto é uma implementação do Jogo da Velha desenvolvida para fins acad
 - Desenvolver um sistema de pontuação.
 - Melhorar o tratamento de erros.
 
+![imagem do jogo Rodando](/src/img/novas_fucoes.png)
+
 ## 💻 Conceitos Aplicados
 - **Encapsulamento:** Separação da lógica de jogo (`JogoDaVelha.java`) da execução do console (`Main.java`).
 - **Exceções Personalizadas:** Criação da classe `JogadaInvalidaException` para um controle mais refinado das regras.
@@ -31,8 +33,12 @@ Este projeto é uma implementação do Jogo da Velha desenvolvida para fins acad
 2. Clone o repositório ou baixe os arquivos.
 3. Abra o projeto em sua IDE (IntelliJ IDEA recomendada).
 4. Execute o arquivo `Main.java` localizado em `src/main/java/org/jogo_da_velha/`.
-
 ---
+
+## 🎮 Jogo Rodando
+
+![imagem do jogo Rodando](/src/img/exemplo_uso.png)
+
 ### Desenvolvido por:
 **Ana Paula Santos**
 
