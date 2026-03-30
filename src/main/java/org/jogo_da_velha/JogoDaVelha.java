@@ -14,12 +14,31 @@ public class JogoDaVelha {
     }
 
     public void exibirTabuleiro() {
+        // Códigos ANSI para as cores
+        String ANSI_RESET = "\u001B[0m";
+        String ANSI_BLUE = "\u001B[34m";  // Cor para o X
+        String ANSI_RED = "\u001B[31m";   // Cor para o O
+        String ANSI_CYAN = "\u001B[36m";  // Cor para as bordas/números (opcional)
+
         System.out.println("\n      0     1     2  ");
         System.out.println("   +-----+-----+-----+");
         for (int i = 0; i < 3; i++) {
             System.out.print(i + "  |  ");
             for (int j = 0; j < 3; j++) {
-                System.out.print(tabuleiro[i][j] + "  |  ");
+                char peca = tabuleiro[i][j];
+                String corPeca;
+
+                // Define a cor baseada na peça
+                if (peca == 'X') {
+                    corPeca = ANSI_BLUE;
+                } else if (peca == 'O') {
+                    corPeca = ANSI_RED;
+                } else {
+                    corPeca = ANSI_RESET;
+                }
+
+                // Imprime a peça colorida e reseta a cor logo em seguida
+                System.out.print(corPeca + peca + ANSI_RESET + "  |  ");
             }
             System.out.println();
             System.out.println("   +-----+-----+-----+");
